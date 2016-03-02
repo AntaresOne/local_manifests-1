@@ -45,8 +45,7 @@
 	<project path="packages/apps/CarrierConfig" name="JDCTeam/android_packages_apps_CarrierConfig" remote="github" revision="opt-cm-13.0" />
 
 	<!--Vendor-->
-	<project path="vendor/jdc" name="JDCTeam/android_vendor_jdc" remote="github" revision="opt-cm-13.0" >
-	  <copyfile src="build.sh" dest="build.sh" />
-	</project>
+	<project path="vendor/jdc" name="JDCTeam/android_vendor_jdc" remote="github" revision="opt-cm-13.0" />
+
 
 </manifest>
