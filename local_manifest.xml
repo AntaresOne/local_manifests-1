@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-	<!--Self update this manifest-->
-	<project path=".repo/local_manifests" name="dkati/local_manifests" remote="github" revision="lightcm-13">
-		<copyfile src="local_manifest.xml" dest="local_manifest.xml" />
-	</project>
-	
 
 	<!-- Device tree -->
 	<project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" remote="github" revision="cm-13.0" />
@@ -32,20 +27,9 @@
 	<!-- Kernel (base) -->
 	<project path="kernel/samsung/jf" name="CyanogenMod/android_kernel_samsung_jf" remote="github" revision="cm-13.0" />
 
-	<!-- Packages -->
-	<project path="packages/apps/STweaks" name="JDCTeam/STweaks" remote="github" revision="aosp" />
 
 	<!--Proprietary vendor blobs-->
 	<project path="vendor/samsung" name="JDCTeam/proprietary_vendor_samsung" remote="github" revision="jf-6.0-newril" />
 	
-	<!-- Telephony for unified variants -->
-	<remove-project name="CyanogenMod/android_frameworks_opt_telephony" path="frameworks/opt/telephony" />
-	<remove-project name="CyanogenMod/android_packages_apps_CarrierConfig" path="packages/apps/CarrierConfig" />
-	<project path="frameworks/opt/telephony" name="JDCTeam/android_frameworks_opt_telephony" remote="github" revision="opt-cm-13.0" />
-	<project path="packages/apps/CarrierConfig" name="JDCTeam/android_packages_apps_CarrierConfig" remote="github" revision="opt-cm-13.0" />
-
-	<!--Vendor-->
-	<project path="vendor/jdc" name="JDCTeam/android_vendor_jdc" remote="github" revision="opt-cm-13.0" />
-
 
 </manifest>
